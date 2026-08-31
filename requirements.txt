@@ -1,4 +1,5 @@
 streamlit
 opencv-python-headless
 tf-keras
-deepface==0.0.93
+tf_keras
+deepface
