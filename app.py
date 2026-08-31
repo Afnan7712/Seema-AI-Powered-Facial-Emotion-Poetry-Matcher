@@ -146,8 +146,25 @@ EMOTION_TRANSLATE = {
 # 6. التفاعل والصورة
 # =========================================================
 img_file_buffer = st.camera_input("التقط صورة لتفعيل التفاعل:")
-st.caption("🔒 **تنويه الخصوصية:** الصور تُحلل لحظياً داخل الذاكرة المؤقتة ولا يتم حفظها أو تخزينها في أي سيرفر.")
 
+st.markdown(
+    """
+    <div style="text-align: center; margin-top: 10px;">
+        <span style="
+            color: #d9534f; 
+            background-color: rgba(217, 83, 79, 0.1); 
+            border: 1px solid rgba(217, 83, 79, 0.3);
+            padding: 6px 14px; 
+            border-radius: 20px; 
+            font-size: 0.88rem; 
+            font-weight: bold; 
+            display: inline-block;">
+            🔒 تنويه الخصوصية: الصور تُحلل لحظياً داخل الذاكرة ولا يتم حفظها أو تخزينها مطلقاً.
+        </span>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
 if img_file_buffer is not None:
     bytes_data = img_file_buffer.getvalue()
     cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
