@@ -1,5 +1,5 @@
 streamlit
 opencv-python-headless
-deepface
 tf-keras
-gdown
+deepface==0.0.93
+tensorflow-cpu
