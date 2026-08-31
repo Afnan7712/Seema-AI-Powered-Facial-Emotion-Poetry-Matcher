@@ -1,5 +1,4 @@
 streamlit
 opencv-python-headless
 tf-keras
-tf_keras
 deepface
