@@ -146,6 +146,7 @@ EMOTION_TRANSLATE = {
 # 6. التفاعل والصورة
 # =========================================================
 img_file_buffer = st.camera_input("التقط صورة لتفعيل التفاعل:")
+st.caption("🔒 **تنويه الخصوصية:** الصور تُحلل لحظياً داخل الذاكرة المؤقتة ولا يتم حفظها أو تخزينها في أي سيرفر.")
 
 if img_file_buffer is not None:
     bytes_data = img_file_buffer.getvalue()
