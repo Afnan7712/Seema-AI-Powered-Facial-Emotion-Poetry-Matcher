@@ -146,7 +146,8 @@ EMOTION_TRANSLATE = {
 # 6. التفاعل والصورة
 # =========================================================
 img_file_buffer = st.camera_input("التقط صورة لتفعيل التفاعل:")
-
+with st.sidebar:
+    st.caption("💡 للحصول على أفضل تحليل، اجعل وجهك متمركزاً في المنتصف مع إضاءة جيدة.")
 st.markdown(
     """
     <div style="text-align: center; margin-top: 10px;">
