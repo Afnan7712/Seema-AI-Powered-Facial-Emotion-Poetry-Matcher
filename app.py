@@ -88,7 +88,7 @@ st.markdown(f"""
 st.markdown('''
     <div class="header-card">
         <div class="main-title"> سِيــماء</div>
-        <div class="sub-title">تَقْرَأ المَلامِح.. فَتَنْطِقُ الأَبْيَات ✨</div>
+        <div class="sub-title">تَقرأ المَلامِح.. فَتَنْسُجُ الأَبْيَات ✨</div>
     </div>
 ''', unsafe_allow_html=True)
 
